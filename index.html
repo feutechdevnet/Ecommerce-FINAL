@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOC Restaurant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+    <!-- <a href="#" class="logo"><img src="./images/LogoAOC.png" alt=""></i> aoc restaurant</a> -->
+    <div class="logo"><img src="./images/LogoAOC.png" alt=""></div>
+    
+    <nav class="navbar">
+        <a class="active" href="#home">home</a>
+        <a href="#dishes">dishes</a>
+        <a href="#about">about</a>
+        <a href="#menu">Menu</a>
+        <a href="#review">review</a>
+        <!--<a href="#order">order</a>-->
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="login.html" class="login">Login</a>
+
+    </div>
+</header>
+
+<!-- search form -->
+ <form action="" id="search-form">
+    <input type="search" placeholder="Search Food" name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form> 
+
+<!-- home section -->
+
+<section class="home" id="home">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Our Speciality Dish</span>
+                    <h3>Italian Spaghetti</h3>
+                    <p>
+                        Italian spaghetti is a beloved classic in Italian cuisine, renowned for its simplicity, versatility, and rich flavors. This iconic dish consists of long, thin strands of pasta, typically made from durum wheat semolina, cooked al dente and served with a variety of flavorful sauces and accompaniments.</p>
+                    <a href="#" class="btn">Order Now!</a>
+                </div>
+                <div class="image">
+                    <img src="./images/Spags.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Our Speciality Dish</span>
+                    <h3>Pepperoni Pizza</h3>
+                    <p>Pepperoni pizza is a quintessential favorite among pizza lovers worldwide, celebrated for its simple yet satisfying combination of flavors. This classic pizza typically features a base of tomato sauce and mozzarella cheese, topped generously with slices of pepperoni—a type of dry, cured sausage made from pork or beef seasoned with paprika or chili pepper.</p>
+                    <a href="#" class="btn">Order Now!</a>
+                </div>
+                <div class="image">
+                    <img src="./images/Pizza.png" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Our Speciality Dish</span>
+                    <h3>Italian Steak</h3>
+                    <p>also known as "bistecca alla Fiorentina" or "Fiorentina steak," is a classic Italian dish renowned for its simplicity and robust flavors. Originating from Florence, Italy, this dish typically features a thick-cut T-bone or porterhouse steak, grilled to perfection and seasoned with minimal ingredients to allow the natural flavors of the meat to shine.</p>
+                    <a href="#" class="btn">Order Now!</a>
+                </div>
+                <div class="image">
+                    <img src="./images/Steak.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- Dishes section -->
+
+ <section class="dishes" id="dishes">
+    <h3 class="sub-heading">Our Dishes</h3>
+    <h1 class="heading">Popular Dishes</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a> 
+            <a href="#" class="fas fa-eye"></a>
+            <img class="img" src="./images/Burger.png">
+            <h3>Special Burger</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱250</span>
+            <button onclick="addToCart('Special Burger', 250)">Add to Cart</button>
+        </div>
+
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a> 
+            <a href="#" class="fas fa-eye"></a>
+            <img class="img" src="./images/Lobster.png">
+            <h3>king lobster</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <span>₱570</span>
+            <button onclick="addToCart('King Lobster', 570)">Add to Cart</button>
+        </div>
+
+        
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a> 
+            <a href="#" class="fas fa-eye"></a>
+            <img class="img" src="./images/Garlicbread.png">
+            <h3>garlic bread</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱120</span>
+            <button onclick="addToCart('Garlic Bread', 120)">Add to Cart</button>
+        </div>
+
+        
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a> 
+            <a href="#" class="fas fa-eye"></a>
+            <img class="img" src="./images/FrenchFries.png">
+            <h3>French Fries</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱120</span>
+            <button onclick="addToCart('French Fries', 120)">Add to Cart</button>
+        </div>
+
+        
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a> 
+            <a href="#" class="fas fa-eye"></a>
+            <img class="img" src="./images/Arancini.png">
+            <h3>Arancini</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱170</span>
+            <button onclick="addToCart('Arancini', 170)">Add to Cart</button>
+        </div>
+
+        
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a> 
+            <a href="#" class="fas fa-eye"></a>
+            <img class="img" src="./images/Risotto.png">
+            <h3>risotto</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱165</span>
+            <button onclick="addToCart('Risotto', 165)">Add to Cart</button>
+        </div>
+    </div>
+</section> 
+
+<!-- About Section -->
+
+ <section class="about" id="about">
+    <h3 class="sub-heading">About Us</h3>
+    <h1 class="heading">Why Choose Us?</h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="./images/Carbs.png" alt="Carbs">
+        </div>
+
+        <div class="content">
+            <h3>Best food in the country</h3>
+            <p>Lex Restaurant offers a unique fusion of Italian, Japanese, Korean, and Spanish cuisines. Our menu showcases the best of each culinary tradition, from hearty Italian pastas to delicate Japanese sushi, savory Korean barbecue, and authentic Spanish tapas. Join us for a culinary journey that brings together diverse flavors and cultures in every dish. Buon appetito, itadakimasu, 맛있게 드세요, ¡buen provecho!</p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>free delivery</span>
+                </div>
+
+                <div class="icons">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>free delivery</span>
+                </div>
+
+                <div class="icons">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 service</span>
+                </div>
+            </div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+</section> 
+
+<!-- Menu Section -->
+
+ <section class="menu" id="menu">
+    <h3 class="sub-heading">Our Menu</h3>
+    <h1 class="heading">Today's Speciality</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="./images/Ribo.png">
+                <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Ribollita</h3>
+            <p>Ribollita is a hearty Tuscan soup that originated as a peasant dish, traditionally made with leftover bread, vegetables, beans, and kale.</p>
+            <button onclick="addToCart('Ribollita', 180)">Add to Cart</button>
+            <span class="price">₱180</span>
+        </div>
+    </div>
+
+    <div class="box">
+            <div class="image">
+                <img src="./images/Foca.png">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Foccacia</h3>
+                <p>Focaccia is a beloved Italian bread known for its soft, chewy texture and savory flavor.  </p>
+                <button onclick="addToCart('Focaccia', 200)">Add to Cart</button>
+                <span class="price">₱200</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="./images/Roast.png">
+                <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Roast Chicken(Whole)</h3>
+            <p>Roast chicken is a classic dish cherished for its simplicity and succulence. </p>
+            <button onclick="addToCart('Whole Roasted Chicken', 400)">Add to Cart</button>
+            <span class="price">₱400</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="./images/Crepe.png">
+            <a href="#" class="fas fa-heart"></a>
+    </div>
+    <div class="content">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Crepe(Banana and Strawberry)</h3>
+        <p>Crepes with banana and strawberry is a delightful and simple dish that combines thin, delicate crepes with the natural sweetness of ripe bananas and juicy strawberries. </p>
+        <button onclick="addToCart('Crepe Banana and Strawberry', 140)">Add to Cart</button>
+        <span class="price">₱140</span>
+    </div>
+</div>
+
+<div class="box">
+    <div class="image">
+        <img src="./images/Dumplings.png">
+        <a href="#" class="fas fa-heart"></a>
+</div>
+<div class="content">
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+    <h3>Dumplings</h3>
+    <p>Dumplings are versatile and beloved across various cuisines worldwide, from Asian to European.  </p>
+    <button onclick="addToCart('Dumplings', 220)">Add to Cart</button>
+    <span class="price">₱220</span>
+</div>
+</div>
+
+<div class="box">
+    <div class="image">
+        <img src="./images/Ramen.png">
+        <a href="#" class="fas fa-heart"></a>
+</div>
+<div class="content">
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+    <h3>Ramen</h3>
+    <p>Ramen is a popular Japanese noodle soup dish known for its flavorful broth and variety of toppings. </p>
+    <button onclick="addToCart('Ramen', 150)">Add to Cart</button>
+    <span class="price">₱150</span>
+</div>
+</div>
+
+<div class="box">
+    <div class="image">
+        <img src="./images/Xiao.png">
+        <a href="#" class="fas fa-heart"></a>
+</div>
+<div class="content">
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+    <h3>Xiao Long Bao</h3>
+    <p>Xiao Long Bao is a type of Chinese steamed dumpling originating from the Jiangnan region of China, particularly associated with Shanghai cuisine. </p>
+    <button onclick="addToCart('Xiao Long Bao', 190)">Add to Cart</button>
+    <span class="price">₱190</span>
+</div>
+</div>
+
+<div class="box">
+    <div class="image">
+        <img src="./images/Kebab.png">
+        <a href="#" class="fas fa-heart"></a>
+</div>
+<div class="content">
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+    <h3>Kebab</h3>
+    <p>Kebab is a diverse and popular dish originating from the Middle East and Mediterranean regions, with variations found across many cultures.</p>
+    <button onclick="addToCart('Kebab', 180)">Add to Cart</button>
+    <span class="price">₱180</span>
+</div>
+</div>
+
+<div class="box">
+    <div class="image">
+        <img src="./images/Paela.png">
+        <a href="#" class="fas fa-heart"></a>
+</div>
+<div class="content">
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+    <h3>Paela Rice</h3>
+    <p>Paella is a traditional Spanish dish originating from the Valencia region and is internationally renowned for its vibrant colors and rich flavors.</p>
+    <button onclick="addToCart('Paela Rice', 250)">Add to Cart</button>
+    <span class="price">₱250</span>
+</div>
+</div>
+    </div>
+</section> 
+
+<section class="about" id="about">
+    <h3 class="sub-heading">Shopping Cart</h3>
+    <h1 class="heading">Review before Checkout</h1>
+        <div id="cart">
+            <ul id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </ul>
+            <h1>Total: P<span id="total">0</span></h1>
+            <div id="paypal-button-container"></div>
+            <button id="reset-btn" onclick="resetCart()">Reset Cart</button>
+        </div>
+</section>
+
+<!-- Review section -->
+
+ <section class="review" id="review">
+    <h3 class="sub-heading">Customer's Review</h3>
+    <h1 class="heading">What they say</h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="./images/Me.jpg">
+                    <div class="user-info">
+                        <h3>Alexis Latayan</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Lex Restaurant in New York City is a culinary gem that deserves five stars. From the moment you enter, you're greeted with a warm ambiance and a promise of diverse flavors from Italy, Japan, Korea, and Spain.
+
+                    Each dish at Lex tells a story of culinary mastery and cultural fusion. From hearty Italian pastas to delicate Japanese sushi, savory Korean barbecue, and authentic Spanish tapas, every bite is a journey in itself.
+                    
+                    The standout dish? The paella—a true masterpiece that captures the essence of Spanish cuisine.<p>
+            </div>
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="./images/PFP2.jpg">
+                    <div class="user-info">
+                        <h3>Carlos Sadaba</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>As an avid food enthusiast with a penchant for culinary diversity, I recently embarked on a gastronomic adventure at Lex Restaurant in the heart of New York City. Lex Restaurant promises a unique fusion of Italian, Japanese, Korean, and Spanish cuisines, and let me assure you, it delivers on that promise in every aspect.<p>
+            </div>
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="./images/PFP.jpg">
+                    <div class="user-info">
+                        <h3>Richard Foster</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>In the heart of Filipinos, Lex Restaurant masterfully blends Italian, Japanese, Korean, and Spanish cuisines. From ambiance to service, excellence abounds. Don't miss their standout paella—a culinary journey not to be missed. Lex Restaurant: where flavors unite and borders fade.<p>
+            </div>
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="./images/Kalbo.jpg">
+                    <div class="user-info">
+                        <h3>Oliver Alfaro</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>I recently savored the culinary delights at Lex Restaurant in New York City. This charming eatery seamlessly fuses Italian, Japanese, Korean, and Spanish cuisines, promising a diverse culinary journey with every dish. From comforting Italian pastas to delicate Japanese sushi and savory Korean barbecue, each bite is a celebration of global flavors and cultures. Don't miss their standout paella—a true masterpiece that embodies the essence of Spanish cuisine. Lex Restaurant invites you to indulge in a culinary adventure where every dish tells a story of innovation and tradition. ¡Buen provecho!<p>
+            </div>
+        </div>
+
+    </div>
+</section> 
+
+<!-- Order section -->
+
+<!-- <section class="order" id="order">
+    <h3 class="sub-heading">Order Now</h3>
+    <h1 class="heading">Free and Fast</h1>
+
+    <form action="">
+
+        <div class="inputBox">
+            <div class="input">
+                <span>Your Name</span>
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+
+            <div class="input">
+                <span>Your Number</span>
+                <input type="number" placeholder="Enter Your Number">
+            </div>
+        </div>
+            
+        <div class="inputBox">
+            <div class="input">
+                <span>Your Order</span>
+                <input type="text" placeholder="Enter Your Order">
+            </div>
+
+            <div class="input">
+                <span>Additional Food</span>
+                <input type="text" placeholder="Extra with food">
+            </div>
+        </div>
+
+        <div class="inputBox">
+            <div class="input">
+                <span>How much</span>
+                <input type="number" placeholder="How Many Orders">
+            </div>
+
+            <div class="input">
+                <span>Date and Time</span>
+                <input type="datetime-local">
+            </div>
+        </div>
+
+        <div class="inputBox">
+            <div class="input">
+                <span>Your Address</span>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter Address"></textarea>
+            </div>
+            <div class="input">
+                <span>Your Message</span>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            </div>
+        </div>
+
+        <input type="submit" value="Order Now" class="btn">
+    </form>
+</section>--> 
+
+<!-- Footer section -->
+
+ <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Australia</a>
+            <a href="#">Japan</a>
+            <a href="#">Russia</a>
+            <a href="#">USA</a>
+            <a href="#">Philippines</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#dishes">Dishes</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Review</a>
+            <a href="#order">Order</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#">09065880520</a>
+            <a class="email" href="#">alexislatayan1@gmail</a>
+        </div>
+
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter/X</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Telegram</a>
+        </div>
+    </div>
+
+    <div class="credit">Created By <span>AOC Restaurant</span> | All Rights Reserved</div>
+</section>
+
+<!-- Loader part -->
+
+ <div class="loader-container">
+    <img src="./images/Loader.gif" alt="">
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.paypal.com/sdk/js?client-id=AR-HnwBACEfPykcQSd5Q3ue16-RrEDj-U_JR2zZ0Q96vgZ9OWgyl-Qd5QH8LXq7LmNEFuumArpd3HW7G&currency=USD"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
